@@ -15,6 +15,47 @@ namespace Force
         public Form1()
         {
             InitializeComponent();
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        
+
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        double sin(double y)
+        {
+            return (Math.Sin(y * Math.PI / 180));
+        }
+
+        double cos(double x)
+        {
+            return (Math.Cos(x * Math.PI / 180));
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            try
+            {
+                double F = Convert.ToDouble(textBox1.Text);
+                double A = Convert.ToDouble(textBox2.Text);
+                double FX = F * cos(A);
+                label4.Text = ("FX =" + FX);
+            }
+            catch
+            {
+
+            }
+            
+                
         }
     }
 }
